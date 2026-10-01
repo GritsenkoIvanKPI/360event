@@ -1,0 +1,11 @@
+# Dependencies (reinstall with `npm install`)
+node_modules/
+
+# Local QA screenshots
+temporary screenshots/
+
+# macOS
+.DS_Store
+
+# Unused backup image
+img/yankiv-old.jpg

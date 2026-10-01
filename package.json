@@ -1,0 +1,12 @@
+{
+  "name": "perevirka-360-landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "shot": "node screenshot.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}
