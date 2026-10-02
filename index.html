@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Перевірка 360°: до, під час, після — онлайн-вебінар 29 жовтня 2026</title>
-<meta name="description" content="Онлайн-вебінар Всеукраїнської асоціації аутсорсингу, 29 жовтня 2026, 16:00–19:00. Як побачити податкові ризики до перевірки, правильно організувати процес і захистити позицію бізнесу після отримання акта.">
+<meta name="description" content="Онлайн-вебінар Всеукраїнської асоціації аутсорсингу, 29 жовтня 2026, 11:00–15:00. Як побачити податкові ризики до перевірки, правильно організувати процес і захистити позицію бізнесу після отримання акта.">
 <meta property="og:title" content="Перевірка 360°: до, під час, після">
-<meta property="og:description" content="29 жовтня 2026 · четвер · 16:00–19:00 · онлайн. Три експерти — один цілісний алгоритм дій.">
+<meta property="og:description" content="29 жовтня 2026 · четвер · 11:00–15:00 · онлайн. Три експерти — один цілісний алгоритм дій.">
 <meta property="og:image" content="img/hero.jpg">
 <meta name="theme-color" content="#11068B">
 <link rel="icon" href="img/ico.svg" type="image/svg+xml">
@@ -304,7 +304,7 @@
   .hero__price strong { display: block; color: var(--white); font-weight: 700; font-size: 22px; line-height: 1.3; }
 
   .hero__media { position: relative; min-height: 440px; overflow: hidden; }
-  .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; transform: scale(1.04); animation: heroZoom 2.4s var(--ease-out) forwards; }
+  .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; transform: scale(1.04); animation: heroZoom 2.4s var(--ease-out) forwards; }
   @keyframes heroZoom { to { transform: scale(1); } }
   .media-tone { position: absolute; inset: 0; background: #2A1FB8; mix-blend-mode: multiply; opacity: .16; pointer-events: none; }
   .media-fade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,7,64,.6) 0%, rgba(10,7,64,.12) 38%, rgba(10,7,64,0) 60%); pointer-events: none; }
@@ -438,6 +438,12 @@
   .ag-card--hl .ag-card__stage { color: var(--accent); opacity: 1; }
   .ag-card--hl .ag-card__title { color: var(--white); }
   .ag-card--hl .ag-card__text { color: rgba(255,255,255,.85); }
+  .ag-card--break { background: transparent; box-shadow: inset 0 0 0 1.5px var(--line); border-style: dashed; padding-top: 18px; padding-bottom: 18px; }
+  .ag-card--break .ag-card__title { font-size: 17px; color: var(--muted); font-weight: 600; }
+  .ag-row--break .ag-node__icon { color: var(--muted); }
+  .ag-sub { margin-top: 14px; display: grid; gap: 8px; }
+  .ag-sub li { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: 15px; line-height: 1.5; color: rgba(255,255,255,.88); }
+  .ag-sub b { flex: none; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; min-width: 96px; }
   .ag-avatars { display: flex; margin-left: calc(var(--space-4) + 1px); }
   .ag-avatars img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: 50% 15%; box-shadow: 0 0 0 3px var(--brand); }
   .ag-avatars img + img { margin-left: -14px; }
@@ -612,6 +618,7 @@
     .panel::before, .panel--left::before { inset: 0; border-radius: 0; }
   }
   @media (max-width: 639px) {
+    .ag-sub li { flex-direction: column; gap: 0; }
     .stats { grid-template-columns: 1fr; }
     .stat { display: flex; align-items: baseline; gap: var(--space-2); padding: 14px var(--space-3); }
     .stat + .stat { border-top: 1px dashed rgba(17,6,139,.2); }
@@ -708,6 +715,7 @@
   <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></g></symbol>
   <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17M8 3.5v2M12 3.5v2"/></g></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></g></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
@@ -775,7 +783,7 @@
         <p class="hero__lead load-in" data-d="3">Як побачити податкові ризики до перевірки, правильно організувати процес і захистити позицію бізнесу після отримання акта.</p>
         <ul class="hero__meta load-in" data-d="4" aria-label="Дата і формат">
           <li class="meta-pill"><svg width="18" height="18"><use href="#i-cal"/></svg>29 жовтня 2026, четвер</li>
-          <li class="meta-pill"><svg width="18" height="18"><use href="#i-clock"/></svg>16:00–19:00</li>
+          <li class="meta-pill"><svg width="18" height="18"><use href="#i-clock"/></svg>11:00–15:00</li>
           <li class="meta-pill"><svg width="18" height="18"><use href="#i-screen"/></svg>Онлайн</li>
         </ul>
         <div class="hero__actions load-in" data-d="5">
@@ -790,7 +798,7 @@
   </div>
 
   <div class="hero__media">
-    <img src="img/hero.jpg" alt="Фінансова директорка переглядає документи перед податковою перевіркою" width="896" height="1200" fetchpriority="high">
+    <img src="img/hero.jpg" alt="Спікери вебінару: Мар’яна Кавин, Олена Макеєва та Богдан Янків" width="1086" height="1448" fetchpriority="high">
     <span class="media-tone"></span>
     <span class="media-fade"></span>
   </div>
@@ -868,7 +876,7 @@
   <section class="section" id="speakers" aria-labelledby="speakers-title">
     <div class="container-x">
       <div class="stats reveal" aria-label="Вебінар у цифрах">
-        <div class="stat"><div class="stat__num">3<span class="stat__unit">год</span></div><div class="stat__label">практики онлайн</div></div>
+        <div class="stat"><div class="stat__num">4<span class="stat__unit">год</span></div><div class="stat__label">практики онлайн</div></div>
         <div class="stat"><div class="stat__num">3</div><div class="stat__label">експерти-практики</div></div>
         <div class="stat"><div class="stat__num">6</div><div class="stat__label">блоків програми</div></div>
         <div class="stat"><div class="stat__num">360°</div><div class="stat__label">погляд на перевірку</div></div>
@@ -969,14 +977,14 @@
     <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-end">
       <div>
         <p class="eyebrow reveal">Програма · 29 жовтня</p>
-        <h2 id="program-title" class="h-display h2 reveal" data-d="1">Три години практики за логікою 360°</h2>
+        <h2 id="program-title" class="h-display h2 reveal" data-d="1">Чотири години практики за логікою 360°</h2>
       </div>
       <p class="lead muted reveal" data-d="2">Учасники побачать один і той самий кейс із трьох боків: облік і документи, управління компанією, юридичний захист. Час — київський.</p>
     </div>
 
     <ol class="agenda section-body">
       <li class="ag-row reveal" data-d="1">
-        <div class="ag-time"><span class="ag-time__start">16:00</span><span class="ag-time__end">до 16:10</span></div>
+        <div class="ag-time"><span class="ag-time__start">11:00</span><span class="ag-time__end">до 11:10</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-flag"/></svg></span></div>
         <div class="ag-card ag-card--minor">
           <div>
@@ -987,7 +995,7 @@
         </div>
       </li>
       <li class="ag-row reveal" data-d="2">
-        <div class="ag-time"><span class="ag-time__start">16:10</span><span class="ag-time__end">до 16:50</span></div>
+        <div class="ag-time"><span class="ag-time__start">11:10</span><span class="ag-time__end">до 11:50</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-search"/></svg></span></div>
         <div class="ag-card">
           <div>
@@ -999,7 +1007,7 @@
         </div>
       </li>
       <li class="ag-row reveal" data-d="3">
-        <div class="ag-time"><span class="ag-time__start">16:50</span><span class="ag-time__end">до 17:30</span></div>
+        <div class="ag-time"><span class="ag-time__start">11:50</span><span class="ag-time__end">до 12:30</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-compass"/></svg></span></div>
         <div class="ag-card">
           <div>
@@ -1010,8 +1018,18 @@
           <div class="ag-speaker"><img src="img/makeieva.jpg" alt="" loading="lazy"><div><b>Олена Макеєва</b><span>40 хв</span></div></div>
         </div>
       </li>
+      <li class="ag-row ag-row--break reveal" data-d="1">
+        <div class="ag-time"><span class="ag-time__start">12:30</span><span class="ag-time__end">до 13:00</span></div>
+        <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-coffee"/></svg></span></div>
+        <div class="ag-card ag-card--break">
+          <div>
+            <h3 class="ag-card__title">Перерва</h3>
+          </div>
+          <span class="ag-dur">30 хв</span>
+        </div>
+      </li>
       <li class="ag-row reveal" data-d="1">
-        <div class="ag-time"><span class="ag-time__start">17:30</span><span class="ag-time__end">до 18:10</span></div>
+        <div class="ag-time"><span class="ag-time__start">13:00</span><span class="ag-time__end">до 13:40</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-shield"/></svg></span></div>
         <div class="ag-card">
           <div>
@@ -1023,26 +1041,30 @@
         </div>
       </li>
       <li class="ag-row ag-row--hl reveal" data-d="2">
-        <div class="ag-time"><span class="ag-time__start">18:10</span><span class="ag-time__end">до 18:50</span></div>
+        <div class="ag-time"><span class="ag-time__start">13:40</span><span class="ag-time__end">до 14:40</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-chat"/></svg></span></div>
         <div class="ag-card ag-card--hl">
           <div>
-            <p class="ag-card__stage">Спільна сесія · 40 хв</p>
-            <h3 class="ag-card__title">«Перевірка 360°»: розбір кейсу і ваші запитання</h3>
-            <p class="ag-card__text">Три експерти разом розбирають практичний кейс і відповідають на запитання учасників.</p>
+            <p class="ag-card__stage">Спільна сесія · 60 хв</p>
+            <h3 class="ag-card__title">Q&amp;A «Перевірка 360°»</h3>
+            <ul class="ag-sub">
+              <li><b>13:40–13:50</b><span>Один наскрізний кейс 360°</span></li>
+              <li><b>13:50–14:30</b><span>Запитання учасників</span></li>
+              <li><b>14:30–14:40</b><span>Бліц-відповіді від трьох експертів</span></li>
+            </ul>
           </div>
           <div class="ag-avatars" aria-hidden="true"><img src="img/kavyn.jpg" alt="" loading="lazy"><img src="img/makeieva.jpg" alt="" loading="lazy"><img src="img/yankiv.jpg" alt="" loading="lazy"></div>
         </div>
       </li>
       <li class="ag-row reveal" data-d="3">
-        <div class="ag-time"><span class="ag-time__start">18:50</span><span class="ag-time__end">до 19:00</span></div>
+        <div class="ag-time"><span class="ag-time__start">14:40</span><span class="ag-time__end">до 15:00</span></div>
         <div class="ag-node" aria-hidden="true"><span class="ag-node__icon"><svg width="22" height="22"><use href="#i-check"/></svg></span></div>
         <div class="ag-card ag-card--minor">
           <div>
             <h3 class="ag-card__title">Фінальні рекомендації</h3>
-            <p class="ag-card__text">Підсумки та завершення.</p>
+            <p class="ag-card__text">Підсумки та завершення вебінару.</p>
           </div>
-          <span class="ag-dur">10 хв</span>
+          <span class="ag-dur">20 хв</span>
         </div>
       </li>
     </ol>
@@ -1186,7 +1208,7 @@
     <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-end">
       <div>
         <p class="eyebrow reveal">Вартість участі</p>
-        <h2 id="price-title" class="h-display h2 reveal" data-d="1">Повний цикл перевірки за один вечір</h2>
+        <h2 id="price-title" class="h-display h2 reveal" data-d="1">Повний цикл перевірки за один день</h2>
       </div>
       <p class="lead muted reveal" data-d="2">Одна ціна за участь у всіх шести блоках програми, включно зі спільною сесією та відповідями на ваші запитання.</p>
     </div>
@@ -1197,7 +1219,7 @@
         <p class="price-card__name">Коли і де</p>
         <p class="price-card__big">29 жовтня</p>
         <ul class="price-card__list">
-          <li>четвер, 16:00–19:00 за Києвом</li>
+          <li>четвер, 11:00–15:00 за Києвом</li>
           <li>онлайн, з будь-якого місця</li>
           <li>6 блоків програми</li>
           <li>спільна сесія з розбором кейсу</li>
@@ -1211,7 +1233,7 @@
         <p class="price-card__name">Участь у вебінарі</p>
         <p class="price-card__big">3 500<small>грн</small></p>
         <ul class="price-card__list">
-          <li>3 години практики онлайн</li>
+          <li>4 години практики онлайн</li>
           <li>3 експерти: облік, управління, юридичний захист</li>
           <li>розбір одного кейсу з трьох боків</li>
           <li>відповіді на ваші запитання</li>
@@ -1230,11 +1252,11 @@
         <p class="price-card__name">Залишилися питання?</p>
         <p class="price-card__big">Напишіть нам</p>
         <ul class="price-card__list">
-          <li><a href="https://t.me/OutsourceUA_Bot" target="_blank" rel="noopener">Telegram: @OutsourceUA_Bot</a></li>
+          <li><a href="https://t.me/Ad_UAOA" target="_blank" rel="noopener">Telegram: @Ad_UAOA</a></li>
           <li><a href="tel:+380934900505">+380 93 490 05 05</a></li>
           <li><a href="mailto:info@uaoa.com.ua">info@uaoa.com.ua</a></li>
         </ul>
-        <div class="price-card__cta"><a href="https://t.me/OutsourceUA_Bot" target="_blank" rel="noopener" class="btn btn--primary btn--block">Написати в Telegram</a></div>
+        <div class="price-card__cta"><a href="https://t.me/Ad_UAOA" target="_blank" rel="noopener" class="btn btn--primary btn--block">Написати в Telegram</a></div>
       </div>
     </div>
   </div>
@@ -1248,7 +1270,7 @@
         <p class="eyebrow reveal">Q&amp;A</p>
         <h2 id="faq-title" class="h-display h2 reveal" data-d="1">Питання та відповіді</h2>
       </div>
-      <p class="lead muted reveal" data-d="2">Не знайшли відповіді?<br>Напишіть нам у <a class="link-u" href="https://t.me/OutsourceUA_Bot" target="_blank" rel="noopener">Telegram</a> — відповімо особисто.</p>
+      <p class="lead muted reveal" data-d="2">Не знайшли відповіді?<br>Напишіть нам у <a class="link-u" href="https://t.me/Ad_UAOA" target="_blank" rel="noopener">Telegram</a> — відповімо особисто.</p>
     </div>
     <div class="faq-list section-body" data-faq>
       <div class="faq-item is-open reveal">
@@ -1257,7 +1279,7 @@
       </div>
       <div class="faq-item reveal" data-d="1">
         <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-2">Коли і де відбудеться вебінар?<span class="faq-plus"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button></h3>
-        <div class="faq-a" id="faq-2">29 жовтня 2026 року, у четвер, з 16:00 до 19:00 за київським часом. Формат — онлайн, тож приєднатися можна з будь-якого місця.</div>
+        <div class="faq-a" id="faq-2">29 жовтня 2026 року, у четвер, з 11:00 до 15:00 за київським часом. Формат — онлайн, тож приєднатися можна з будь-якого місця.</div>
       </div>
       <div class="faq-item reveal" data-d="2">
         <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3">Скільки коштує участь і як оплатити?<span class="faq-plus"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button></h3>
@@ -1265,7 +1287,7 @@
       </div>
       <div class="faq-item reveal" data-d="3">
         <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-4">Чи можна поставити свої запитання спікерам?<span class="faq-plus"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button></h3>
-        <div class="faq-a" id="faq-4">Так. З 18:10 до 18:50 — спільна сесія «Перевірка 360°»: розбір практичного кейсу та відповіді на запитання учасників.</div>
+        <div class="faq-a" id="faq-4">Так. З 13:40 до 14:40 — спільна Q&amp;A-сесія «Перевірка 360°»: наскрізний кейс, запитання учасників і бліц-відповіді трьох експертів.</div>
       </div>
       <div class="faq-item reveal" data-d="4">
         <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-5">Чи корисно це, якщо перевірку ще не призначено?<span class="faq-plus"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button></h3>
@@ -1273,7 +1295,7 @@
       </div>
       <div class="faq-item reveal" data-d="5">
         <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-6">Як зв’язатися з організаторами?<span class="faq-plus"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button></h3>
-        <div class="faq-a" id="faq-6">Пишіть у <a href="https://t.me/OutsourceUA_Bot" target="_blank" rel="noopener">Telegram</a>, телефонуйте за номером <a href="tel:+380934900505">+380 93 490 05 05</a> або надсилайте лист на <a href="mailto:info@uaoa.com.ua">info@uaoa.com.ua</a>.</div>
+        <div class="faq-a" id="faq-6">Пишіть у <a href="https://t.me/Ad_UAOA" target="_blank" rel="noopener">Telegram</a>, телефонуйте за номером <a href="tel:+380934900505">+380 93 490 05 05</a> або надсилайте лист на <a href="mailto:info@uaoa.com.ua">info@uaoa.com.ua</a>.</div>
       </div>
     </div>
   </div>
@@ -1295,7 +1317,7 @@
           Зареєструватися на вебінар
           <svg width="20" height="20"><use href="#i-arrow"/></svg>
         </a>
-        <p class="final-cta__meta">29&nbsp;жовтня, 16:00–19:00 · онлайн</p>
+        <p class="final-cta__meta">29&nbsp;жовтня, 11:00–15:00 · онлайн</p>
       </div>
     </div>
 
@@ -1315,7 +1337,7 @@
       </nav>
       <div class="lg:col-span-2 flex lg:flex-col lg:items-end gap-3">
         <a href="https://www.instagram.com/outsourcing.association.ua" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg width="20" height="20"><use href="#i-ig"/></svg></a>
-        <a href="https://t.me/OutsourceUA_Bot" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg width="20" height="20"><use href="#i-tg"/></svg></a>
+        <a href="https://t.me/Ad_UAOA" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg width="20" height="20"><use href="#i-tg"/></svg></a>
         <a href="tel:+380934900505" class="social" aria-label="Зателефонувати"><svg width="18" height="18"><use href="#i-phone"/></svg></a>
       </div>
     </div>
