@@ -303,9 +303,22 @@
   .hero__price { color: rgba(255,255,255,.75); font-size: 15px; line-height: 1.5; }
   .hero__price strong { display: block; color: var(--white); font-weight: 700; font-size: 22px; line-height: 1.3; }
 
-  .hero__media { position: relative; min-height: 440px; overflow: hidden; }
-  .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; transform: scale(1.04); animation: heroZoom 2.4s var(--ease-out) forwards; }
-  @keyframes heroZoom { to { transform: scale(1); } }
+  .hero__media { position: relative; background: var(--tint); display: flex; align-items: center; justify-content: center; padding: var(--space-5) var(--space-3); }
+  .hero-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); width: 100%; max-width: 520px; }
+  .hero-tile {
+    position: relative; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 20px; background: var(--tint-2); box-shadow: var(--shadow-elev);
+    transition: box-shadow var(--dur-hover) var(--ease-hover);
+  }
+  .hero-tile:hover { box-shadow: var(--shadow-float); }
+  .hero-tile__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; transition: transform var(--dur-media) var(--ease-hover); }
+  .hero-tile__img--kavyn { object-position: 50% 12%; }
+  .hero-tile__img--makeieva { object-position: 50% 16%; }
+  .hero-tile__img--yankiv { object-position: 50% 22%; }
+  .hero-tile:hover .hero-tile__img { transform: scale(1.05); }
+  .hero-tile .media-fade { background: linear-gradient(to top, rgba(10,7,64,.92) 0%, rgba(10,7,64,.6) 24%, rgba(10,7,64,0) 56%); }
+  .hero-tile__cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 14px 16px; color: var(--white); }
+  .hero-tile__stage { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+  .hero-tile__name { display: block; margin-top: 2px; font-size: 15px; font-weight: 700; line-height: 1.3; white-space: nowrap; }
   .media-tone { position: absolute; inset: 0; background: #2A1FB8; mix-blend-mode: multiply; opacity: .16; pointer-events: none; }
   .media-fade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,7,64,.6) 0%, rgba(10,7,64,.12) 38%, rgba(10,7,64,0) 60%); pointer-events: none; }
 
@@ -607,7 +620,11 @@
     .hero { grid-template-columns: 59% 41%; min-height: 100vh; min-height: 100svh; }
     .hero__panel { display: flex; align-items: flex-end; padding: 150px 0 var(--space-7); }
     .hero__content { max-width: 730px; margin-left: max(var(--space-3), calc((100vw - var(--container)) / 2)); padding-right: var(--space-5); }
-    .hero__media { min-height: auto; }
+    .hero__media { padding: calc(88px + var(--space-4)) clamp(24px, 4vw, 64px) var(--space-4); }
+    .hero-grid { gap: var(--space-3); }
+    .hero-tile { border-radius: 24px; }
+    .hero-tile__cap { padding: 18px 20px; }
+    .hero-tile__name { font-size: 17px; }
   }
   @media (max-width: 1023px) {
     :root { --section-y: 80px; --head-gap: 48px; }
@@ -645,7 +662,12 @@
     .hero__panel { padding: 124px 0 var(--space-5); }
     .hero__lead { font-size: 17px; }
     .meta-pill { font-size: 14px; min-height: 40px; padding: 0 14px; }
-    .hero__media { min-height: 520px; }
+    .hero__media { padding: var(--space-4) var(--space-3); }
+    .hero-grid { gap: 12px; }
+    .hero-tile { border-radius: 16px; }
+    .hero-tile__cap { padding: 10px 12px; }
+    .hero-tile__name { font-size: 13.5px; }
+    .hero-tile__stage { font-size: 9.5px; }
     .site-header__inner { height: 76px; }
     .mobile-menu { top: 76px; }
     .logo-link img { height: 38px; }
@@ -798,9 +820,31 @@
   </div>
 
   <div class="hero__media">
-    <img src="img/hero.jpg" alt="Спікери вебінару: Мар’яна Кавин, Олена Макеєва та Богдан Янків" width="1086" height="1271" fetchpriority="high">
-    <span class="media-tone"></span>
-    <span class="media-fade"></span>
+    <div class="hero-grid">
+      <figure class="hero-tile load-in" data-d="2">
+        <img src="img/kavyn.jpg" alt="Мар’яна Кавин" width="800" height="800" class="hero-tile__img hero-tile__img--kavyn" fetchpriority="high">
+        <span class="media-tone"></span>
+        <span class="media-fade"></span>
+        <figcaption class="hero-tile__cap"><span class="hero-tile__stage">01 · До</span><span class="hero-tile__name">Мар’яна Кавин</span></figcaption>
+      </figure>
+      <figure class="hero-tile load-in" data-d="3">
+        <img src="img/makeieva.jpg" alt="Олена Макеєва" width="800" height="800" class="hero-tile__img hero-tile__img--makeieva">
+        <span class="media-tone"></span>
+        <span class="media-fade"></span>
+        <figcaption class="hero-tile__cap"><span class="hero-tile__stage">02 · Під час</span><span class="hero-tile__name">Олена Макеєва</span></figcaption>
+      </figure>
+      <figure class="hero-tile load-in" data-d="4">
+        <img src="img/yankiv.jpg" alt="Богдан Янків" width="800" height="800" class="hero-tile__img hero-tile__img--yankiv">
+        <span class="media-tone"></span>
+        <span class="media-fade"></span>
+        <figcaption class="hero-tile__cap"><span class="hero-tile__stage">03 · Після</span><span class="hero-tile__name">Богдан Янків</span></figcaption>
+      </figure>
+      <figure class="hero-tile hero-tile--brand load-in" data-d="5">
+        <img src="img/tile-360.jpg" alt="" width="800" height="800" class="hero-tile__img">
+        <span class="media-fade"></span>
+        <figcaption class="hero-tile__cap"><span class="hero-tile__stage">29 жовтня</span><span class="hero-tile__name">Перевірка 360°</span></figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
