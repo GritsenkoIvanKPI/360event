@@ -13,7 +13,6 @@ const PAGES = ['index.html'];
 // served as-is, referenced from the head or the manifest rather than the body
 const ROOT_FILES = [
   '.htaccess',
-  'send-form.php',
   'favicon.ico', 'apple-touch-icon.png',
   'icon-192.png', 'icon-512.png',
   'site.webmanifest', 'robots.txt', 'sitemap.xml',
@@ -84,4 +83,3 @@ try {
 } catch {
   console.log(`(zip not available — upload the contents of ${OUT}/ instead)`);
 }
-console.log('\nstill to create by hand on the server: public_html/config.php');

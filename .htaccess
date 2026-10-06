@@ -10,9 +10,8 @@ Options -Indexes
   RewriteRule ^ https://360webinaruaoa.online%{REQUEST_URI} [R=301,L]
 </IfModule>
 
-# The bot token lives in config.php — never serve it (PHP would not print it anyway;
-# this is a second lock). Same for notes and dotfiles.
-<FilesMatch "^(config(\.example)?\.php|.*\.md|\..*)$">
+# Notes and dotfiles are never served.
+<FilesMatch "^(.*\.md|\..*)$">
   Require all denied
 </FilesMatch>
 
