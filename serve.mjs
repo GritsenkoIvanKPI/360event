@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('.', import.meta.url));
 const port = process.env.PORT || 3000;
 const types = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
-  '.mjs': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png',
+  '.mjs': 'text/javascript', '.svg': 'image/svg+xml', '.webmanifest': 'application/manifest+json', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.json': 'application/json', '.png': 'image/png',
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon',
 };
 

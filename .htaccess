@@ -1,0 +1,36 @@
+# 360webinaruaoa.online — Hostinger (Apache / LiteSpeed)
+
+Options -Indexes
+
+# One address for the site: http:// and www. both redirect to https://360webinaruaoa.online
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://360webinaruaoa.online%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# The bot token lives in config.php — never serve it (PHP would not print it anyway;
+# this is a second lock). Same for notes and dotfiles.
+<FilesMatch "^(config(\.example)?\.php|.*\.md|\..*)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+# Images and icons change rarely; the page itself is always re-checked.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
